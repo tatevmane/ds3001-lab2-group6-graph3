@@ -11,3 +11,9 @@ library(ggplot2)
 View(mtcars)
 data = mtcars
 ```
+
+```{r}
+#selecting aes/adding labels
+ggplot(data = mtcars, aes(x = wt, y = disp)) +
+  geom_point()
+```
