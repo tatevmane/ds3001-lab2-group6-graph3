@@ -14,6 +14,7 @@ data = mtcars
 
 ```{r}
 #selecting aes/adding labels
-ggplot(data = mtcars, aes(x = wt, y = disp)) +
-  geom_point()
+# adding finishing touches, adding a color=  
+ggplot(data = mtcars, aes(x = wt, y = disp, color = gear )) +
+  geom_point() + labs(title = 'Weight of Car by Displacement and Gear')
 ```
